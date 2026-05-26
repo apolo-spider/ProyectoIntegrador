@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("LogoCTCS.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.cabezera nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(93, 93, 207);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Grupos */
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-center {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilo de enlaces */
+.cabezera a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.cabezera a:hover {
+    color: #e31c19;
+}
+
+h1 {
+    color: rgb(93, 93, 207);
+    text-align: center;
+    padding-top: 100px;
+}
+
+.trayectoria {
+    margin-top: 20px;
+}
+
+.mudanza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 100px auto 100px auto;
+    padding: 40px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.mudanza h2 {
+    margin: 0;
+    color: rgb(93, 93, 207);
+}
+
+.detalle {
+    line-height: 30px;
+    margin-inline-end: 18px;
+}
+
+.estado {
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.estado.en-preparacion {
+    color: #e31c19;
+}
+
+.estado.en-transito {
+    color: #2980b9;
+}
+
+.estado.entregado {
+    color: #27ae60;
+}

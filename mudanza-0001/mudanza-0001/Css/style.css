@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+/* Barra de navegación */
+.cabezera nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(93, 93, 207);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Grupos */
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-center {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilo de enlaces */
+.cabezera a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.cabezera a:hover {
+    color: #e31c19;
+}
+
+/* Contenedor principal */
+.conten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 120px auto 40px auto;
+    padding: 30px;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dere {
+    
+    padding: 10px;
+    font-size: 15px;
+}
+
+.izqui img {
+    max-width: 80%;
+    border-radius: 8px;
+    margin-left: 80px;
+}
+
+/* Sección mudanza */
+.mudanza {
+    background: rgba(255,255,255,0.9);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.mudanza ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+/* Formulario */
+.agenda {
+    background: rgba(255,255,255,0.9);
+    margin: 20px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.agenda form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agenda input, .agenda button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.agenda button {
+    background: rgb(93, 93, 207);
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.agenda button:hover {
+    background: #e31c19;
+}
+
+/* Footer */
+footer {
+    background: rgba(0,0,0,0.7);
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: auto;
+}

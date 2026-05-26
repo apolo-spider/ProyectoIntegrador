@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("LogoCTCS.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 14px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("imagenes/WhatsApp\ Image\ 2026-02-22\ at\ 4.40.11\ PM.jpeg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+main{
+    flex: 1;
+}
+
+/* Barra de navegación */
+.cabezera nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(93, 93, 207);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Grupos */
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-center {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilo de enlaces */
+.cabezera a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.cabezera a:hover {
+    color: #e31c19;
+}
+
+.login-flotante{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: white;
+    padding: 30px;
+    width: 300px;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    z-index: 1000;
+}
+
+.login-flotante h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(93, 93, 207);
+}
+
+.login-flotante h3{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}
+
+.login-flotante input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+
+.login-flotante button{
+    padding: 10px;
+    background: rgb(93, 93, 207);
+    color: white;
+    border: none;
+    cursor: pointer;
+}

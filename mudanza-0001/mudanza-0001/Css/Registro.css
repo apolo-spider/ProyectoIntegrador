@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: url("LogoCTCS.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Barra de navegación */
+.cabezera nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(93, 93, 207);
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Grupos */
+.nav-left {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-center {
+    flex: 1;
+    text-align: center;
+}
+
+.nav-right {
+    flex: 1;
+    text-align: right;
+}
+
+/* Estilo de enlaces */
+.cabezera a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.cabezera a:hover {
+    color: #e31c19;
+}
+
+/* Formulario flotante */
+.registro-flotante{
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.registro-flotante h2{
+    text-align: center;
+    margin-bottom: 10px;
+    color: rgb(93, 93, 207);
+}
+
+.registro-flotante h3{
+    font-size: 16px;
+    margin-top: 10px;
+    color: #333;
+}   
+
+.registro-flotante input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #b4b4b4;
+    border-radius: 5px;
+}
+
+.registro-flotante label{
+    font-size: 14px;
+    color: #555;
+}
+
+.registro-flotante button{
+    padding: 10px;
+    background: rgb(93, 93, 207);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.registro-flotante button:hover{
+    background: #e31c19;
+}
