@@ -6,24 +6,9 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: url("LogoCTCS.jpeg") no-repeat center center fixed;
     background-size: cover;
     color: #333;
     line-height: 1.6;
-}
-
-body::before{
-    content: "";
-    position: fixed;
-    top: 14px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("imagenes/WhatsApp\ Image\ 2026-02-22\ at\ 4.40.11\ PM.jpeg");
-    background-size: cover;
-    background-position: center;
-    filter: blur(5px);
-    z-index: -1;
 }
 
 main{
@@ -33,7 +18,7 @@ main{
 /* Barra de navegación */
 .cabezera nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     background-color: rgb(93, 93, 207);
     padding: 15px;
@@ -43,18 +28,39 @@ main{
     z-index: 1000;
 }
 
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    flex: 1;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.barra-busqueda input {
+    padding: 6px 15px;
+    border: 1px solid rgb(187, 187, 210);
+    border-radius: 5px 5px;
+    outline: none;
+}
+
 /* Grupos */
-.nav-left {
+.nav-izquierda {
     flex: 1;
     text-align: left;
 }
 
-.nav-center {
+.nav-centro {
     flex: 1;
     text-align: center;
 }
 
-.nav-right {
+.nav-derecha {
     flex: 1;
     text-align: right;
 }
@@ -68,7 +74,7 @@ main{
 }
 
 .cabezera a:hover {
-    color: #e31c19;
+    color: rgb(161, 161, 205);
 }
 
 .login-flotante{

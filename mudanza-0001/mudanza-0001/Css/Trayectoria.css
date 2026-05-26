@@ -12,10 +12,9 @@ body {
     line-height: 1.6;
 }
 
-/* Barra de navegación */
 .cabezera nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     background-color: rgb(93, 93, 207);
     padding: 15px;
@@ -25,23 +24,43 @@ body {
     z-index: 1000;
 }
 
+.nav-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px; 
+    flex: 1;
+}
+
+/* Barra de búsqueda */
+.barra-busqueda {
+    display: flex;
+    align-items: center;
+}
+
+.barra-busqueda input {
+    padding: 6px 15px;
+    border: 1px solid rgb(187, 187, 210);
+    border-radius: 5px 5px;
+    outline: none;
+}
+
 /* Grupos */
-.nav-left {
+.nav-izquierda {
     flex: 1;
     text-align: left;
 }
 
-.nav-center {
+.nav-centro {
     flex: 1;
     text-align: center;
 }
 
-.nav-right {
+.nav-derecha {
     flex: 1;
     text-align: right;
 }
 
-/* Estilo de enlaces */
 .cabezera a {
     color: white;
     text-decoration: none;
@@ -50,7 +69,7 @@ body {
 }
 
 .cabezera a:hover {
-    color: #e31c19;
+    color: rgb(161, 161, 205);
 }
 
 h1 {

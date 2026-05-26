@@ -7,18 +7,32 @@
     <link rel="stylesheet" href="Css/style.css">
 </head>
 <body>
+
     <!-- Barra de navegación -->
     <header class="cabezera">
      <nav>
-        <div class="nav-left">
+        <div class="nav-izquierda">
             <a href="index.html">CTS</a>
         </div>
-        <div class="nav-center">
+
+        <div class="nav-centro">
             <a href="Trayectoria.html">TRAYECTORIA</a>
-            <a href="#">AYUDA</a>
-            <a href="#">BUSQUEDA</a>
+
+            <div class="dropdown">
+             <button class="dropbtn">AYUDA</button>
+               <div class="dropdown-content">
+                 <a href="faq.html">Preguntas Frecuentes</a>
+                 <a href="contacto.html">Como usar CTS</a>
+                 <a href="soporte.html">Politicas</a>
+               </div>
+            </div>
+            
+            <form class="barra-busqueda" action="busqueda.html" method="get">
+                <input type="text" name="q" placeholder="Buscar...">
+            </form>
         </div>
-        <div class="nav-right">
+
+        <div class="nav-derecha">
             <a href="inicio.html">INICIO</a>
             <a href="Registro.html">REGISTRO</a>
         </div>
