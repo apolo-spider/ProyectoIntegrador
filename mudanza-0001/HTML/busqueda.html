@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/busqueda.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="cabezera">
+<div class="perfil" onclick="mostrarPanel()">
+
+    <img id="fotoPerfil"
+         src="../imagenes/perfil.png"
+         alt=""
+         width="90px">
+
+    <span id="nombreUsuario"></span>
+
+    <input type="file"
+           id="subirFoto"
+           accept="image/*"
+           capture="user"
+           onchange="cambiarFoto(event)"
+           hidden>
+
+</div>
+
+<!-- PANEL -->
+<div id="panelPerfil" class="panelPerfil">
+    <button class="cerrarPanel" onclick="cerrarPanel()">X</button>
+
+    <p>
+        <strong>Nombre:</strong>
+        <span id="infoNombre"></span>
+    </p>
+
+    <p>
+        <strong>Correo:</strong>
+        <span id="infoCorreo"></span>
+    </p>
+
+    <p>
+        <strong>Telefono:</strong>
+        <span id="infoTelefono"></span>
+    </p>
+
+</div>
+        <nav class="izqui">
+            <a href="index.html">HOME</a>
+            <a href="trayectoria.html">TRAYECTORIA</a>
+            <a href="ayuda.html">AYUDA</a>
+            <a href="busqueda.html">BUSQUEDA</a>
+        </nav>
+        <nav class="dere">
+            <a href="inicio.html">INICIO</a>
+            <a href="Registro.html">REGISTRO</a>
+        </nav>
+    </header>
+    <div class="busqueda">
+        <input type="text" placeholder="Buscar mudanza...">
+        <button onclick="abrirBusqueda()">Buscar Preguntas frecuentes...🔍</button>
+
+    </div>
+
+
+    <div class="busqueda-modal" id="modal">
+        <div class="busqueda-contenido">
+            <input type="text" placeholder="Buscar...">
+            <div class="resultado">Pagos</div>
+            <div class="resultado">Tiempo de entrega</div>
+            <div class="resultado">Problemas técnicos</div>
+            <button class="mom" onclick="cerrarBusqueda()">
+                Cerrar
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="centar">
+        <h1>¡Haz parte de la familia CTS y transforma tu mudanza en una experiencia sin estrés! Aquí no solo movemos cajas, movemos sueños, historias y nuevos comienzos. Únete hoy y descubre lo fácil que es avanzar con nosotros a tu lado. </h1>
+    
+
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    ¿Puedo ver el estado de mi mudanza en tiempo real?  🚛
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Sí, en la sección Trayectoria podrás consultar el estado de tu mudanza: en preparación, en tránsito o entregada.😄</strong>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    ¿La aplicación tiene costo?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>No, la aplicación es gratuita. Solo pagas por los servicios de mudanza que contrates.</strong>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    ¿Puedo modificar o cancelar una mudanza ya programada?📄🚛
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Si, desde la sección Trayectoria puedes gestionar tus servicios, modificarlos  o cancelarlos según las políticas de la empresa.  </strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <nav class="mensaje">
+        <img src="../imagenes/mensaje.png" alt="Mensaje de ayuda" width="120px">
+    </nav>
+
+    <script src="../JS/busqueda.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="../JS/login.js" ></script>
+</body>
+
+</html>

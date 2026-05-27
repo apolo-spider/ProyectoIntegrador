@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - CARGA TU CASA SEGURA</title>
+    <link rel="stylesheet" href="../CSS/Registro.css">
+</head>
+<body>
+        <!-- Barra de navegación -->
+    <header class="cabezera">
+
+<div class="perfil" onclick="mostrarPanel()">
+
+    <img id="fotoPerfil"
+         src="../imagenes/perfil.png"
+         alt=""
+         width="90px">
+
+    <span id="nombreUsuario"></span>
+
+    <input type="file"
+           id="subirFoto"
+           accept="image/*"
+           capture="user"
+           onchange="cambiarFoto(event)"
+           hidden>
+
+</div>
+
+<!-- PANEL -->
+<div id="panelPerfil" class="panelPerfil">
+    <button class="cerrarPanel" onclick="cerrarPanel()">X</button>
+
+    <p>
+        <strong>Nombre:</strong>
+        <span id="infoNombre"></span>
+    </p>
+
+    <p>
+        <strong>Correo:</strong>
+        <span id="infoCorreo"></span>
+    </p>
+
+    <p>
+        <strong>Telefono:</strong>
+        <span id="infoTelefono"></span>
+    </p>
+
+</div>
+        <nav class="izqui">
+            <a href="index.html">HOME</a>
+            <a href="trayectoria.html">TRAYECTORIA</a>
+            <a href="ayuda.html">AYUDA</a>
+            <a href="busqueda.html">BUSQUEDA</a>
+        </nav>
+        <nav class="dere">
+            <a href="inicio.html">INICIO</a>
+            <a href="Registro.html">REGISTRO</a>
+        </nav>
+    </header>
+
+    <!-- Formulario flotante de registro -->
+    <div class="registro-flotante">
+        <h2>Crear Cuenta</h2>
+
+        <input type="text" placeholder="Nombre completo" required>
+        <input type="email" placeholder="Correo electrónico" required>
+        <input type="tel" placeholder="Teléfono" required>
+        <input type="password" placeholder="Contraseña" required>
+
+        <h3>Datos para transportadores</h3>
+        <input type="text" placeholder="Licencia de conducción" >
+        <input type="text" placeholder="Papeles del vehículo" >
+
+        <label>
+            <input type="checkbox" required> Acepto los términos y condiciones
+        </label>
+
+        <button onclick="registrar()">Registrarse</button>
+    </div>
+
+    <script src="../JS/login.js"></script>
+</body>
+</html>

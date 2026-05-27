@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    position: relative;
+
+}
+
+body::before{
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../imagenes/WhatsApp Image 2026-02-22 at 4.40.11 PM.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    filter: brightness(0.9);
+    z-index: -1;
+}
+
+body{
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 18px;
+}
+
+main{
+    flex: 1;
+}
+
+.perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#fotoPerfil{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+#subirFoto{
+    margin-top: 10px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.panelPerfil{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+    width: 280px;
+
+    z-index: 1000;
+}
+
+.panelPerfil p{
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+/* .panelPerfil{
+    position: relative;
+}
+ */
+.cerrarPanel{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.cabezera {
+    display: flex;
+    gap: 8rem;
+    background-color: rgb(93, 93, 207);
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.cabezera nav.izqui {
+    margin-top: 25px;
+    display: flex;
+    gap: 2rem;
+    padding-left: 5rem;
+}   
+.cabezera nav.dere {
+    margin-top: 13px;
+    display: flex;
+    gap: 2rem;
+    padding-left: 15rem;
+}
+
+.cabezera a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    
+}
+
+.cabezera a:hover {
+    color: #e31c19;
+}
+.login-flotante{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+    background: white;
+    padding: 30px;
+    width: 300px;
+    
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    z-index: 1000;
+}
+
+.login-flotante input{
+    padding: 10px;
+    font-size: 16px;
+}
+
+.login-flotante button{
+    padding: 10px;
+    background: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+}

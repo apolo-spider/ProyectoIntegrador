@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/trayectoria.css">
+</head>
+<body>
+        <!-- Barra de navegación -->
+
+<header class="cabezera">
+<div class="perfil" onclick="mostrarPanel()">
+
+    <img id="fotoPerfil"
+         src="../imagenes/perfil.png"
+         alt=""
+         width="90px">
+
+    <span id="nombreUsuario"></span>
+
+    <input type="file"
+           id="subirFoto"
+           accept="image/*"
+           capture="user"
+           onchange="cambiarFoto(event)"
+           hidden>
+
+</div>
+<!-- PANEL -->
+<div id="panelPerfil" class="panelPerfil">
+    <button class="cerrarPanel" onclick="cerrarPanel()">X</button>
+    <p>
+        <strong>Nombre:</strong>
+        <span id="infoNombre"></span>
+    </p>
+    <p>
+        <strong>Correo:</strong>
+        <span id="infoCorreo"></span>
+    </p>
+    <p>
+        <strong>Telefono:</strong>
+        <span id="infoTelefono"></span>
+    </p>
+</div>
+        <nav class="izqui">
+            <a href="index.html">HOME</a>
+            <a href="trayectoria.html">TRAYECTORIA</a>
+            <a href="ayuda.html">AYUDA</a>
+            <a href="busqueda.html">BUSQUEDA</a>
+        </nav>
+        <nav class="dere">
+            <a href="inicio.html">INICIO</a>
+            <a href="Registro.html">REGISTRO</a>
+        </nav>
+    </header>
+    
+    <section class="trayectoria">
+
+    <h2>Historial de Mudanzas</h2>
+
+    <p id="mensaje">Sin historial de mudanzas</p>
+
+    <div id="contenedor"></div>
+
+    <button onclick="agregarMudanza()">
+        Agregar prueba
+    </button>
+
+</section>
+
+<script src="../JS/trayectoria.js"></script>
+<script src="../JS/login.js"></script>
+</body>
+</html>

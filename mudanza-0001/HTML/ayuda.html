@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/ayuda.css">
+</head>
+
+<body>
+    <header class="cabezera">
+
+        <div class="perfil" onclick="mostrarPanel()">
+
+            <img id="fotoPerfil" src="../imagenes/perfil.png" alt="" width="90px">
+
+            <span id="nombreUsuario"></span>
+
+            <input type="file" id="subirFoto" accept="image/*" capture="user" onchange="cambiarFoto(event)" hidden>
+
+        </div>
+
+
+        <!-- PANEL -->
+        <div id="panelPerfil" class="panelPerfil">
+            <button class="cerrarPanel" onclick="cerrarPanel()">X</button>
+
+            <p>
+                <strong>Nombre:</strong>
+                <span id="infoNombre"></span>
+            </p>
+
+            <p>
+                <strong>Correo:</strong>
+                <span id="infoCorreo"></span>
+            </p>
+
+            <p>
+                <strong>Telefono:</strong>
+                <span id="infoTelefono"></span>
+            </p>
+
+        </div>
+
+        <nav class="izqui">
+            <a href="index.html">HOME</a>
+            <a href="trayectoria.html">TRAYECTORIA</a>
+            <a href="ayuda.html">AYUDA</a>
+            <a href="busqueda.html">BUSQUEDA</a>
+        </nav>
+        <nav class="dere">
+            <a href="inicio.html">INICIO</a>
+            <a href="Registro.html">REGISTRO</a>
+        </nav>
+    </header>
+    <h1>¡Te damos la bienvenida al equipo de soporte de CTS!</h1>
+    <div class="conten">
+        <div class="caja1">
+            <p>Estamos aquí para ayudarte a resolver cualquier duda o problema que puedas tener con nuestros servicios
+                de mudanza. Nuestro equipo de soporte está comprometido a brindarte la mejor experiencia posible,
+                asegurando que tu mudanza sea lo más fluida y sin estrés posible.</p>
+        </div>
+        <div class="caja2">
+            <p>Si tienes alguna pregunta sobre nuestros servicios, necesitas asistencia con tu reserva, o simplemente
+                quieres saber más sobre cómo podemos ayudarte, no dudes en ponerte en contacto con nosotros. Puedes
+                enviarnos un correo electrónico a <a href="mailto:soporte@cts.com">soporte@cts.com</a>.</p>
+        </div>
+    </div>
+
+    <nav class="mensaje">
+        <img src="../imagenes/mensaje.png" alt="Mensaje de ayuda" width="120px">
+    </nav>
+
+    <script src="../JS/login.js"></script>
+
+</body>
+
+</html>
